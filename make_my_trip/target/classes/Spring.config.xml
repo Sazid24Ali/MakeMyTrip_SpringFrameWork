@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="airways_object" class="com.trips.Airways">
+        <property name="Airways_object" value="Airways Object created "></property>
+    </bean>
+    <bean id="bus_object" class="com.trips.Bus">
+        <property name="Busway_object" value="Busways Object created"></property>
+    </bean>
+    <bean id="train_object" class="com.trips.Train">
+        <property name="Trainways_object" value="Trainways Object created"></property>
+    </bean>
+    <bean id="TripObject" class="com.trips.Trip" autowire="byName">
+
+    </bean>
+
+</beans>
